@@ -2,6 +2,8 @@
 {% load static %} 
 {% block section %}
     <h2>{{ object.name }}</h2>
+    <a href="{% url "team-update" object.id %}">edit</a>
+    <a href="{% url "team-delete" object.id %}">delete</a> 
     <hr>
 {% endblock section %}
 
